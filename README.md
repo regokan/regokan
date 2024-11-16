@@ -1,7 +1,9 @@
-## Hi there 👋
+## Hi, I'm Kanish 👋
+
+[![Twitter Badge](https://img.shields.io/badge/-@regokan-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/jonathangin52)](https://twitter.com/regokan)
+[![Linkedin Badge](https://img.shields.io/badge/-regokan-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jonathangin/)](https://www.linkedin.com/in/regokan/)
 
 <!--
-**regokan/regokan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
