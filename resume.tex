@@ -1,0 +1,113 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tabularx} % For adjustable-width columns
+\usepackage{enumitem}
+\usepackage[normalem]{ulem} % Allows underlining text
+
+\geometry{a4paper, margin=0in}
+
+% Define the light gray color explicitly
+\definecolor{LightGray}{HTML}{F6F6F6}
+
+\begin{document}
+
+% Header Section with Light Gray Background
+\noindent
+\begin{tcolorbox}[colback=LightGray, colframe=LightGray, boxrule=0pt, arc=0mm, boxsep=0mm, width=\textwidth, height=5cm]
+    \begin{tabular}{@{}m{0.3\textwidth}@{}m{0.7\textwidth}@{}} % Vertically centered columns
+        % Left Column: Circular Box with Image
+        \begin{center}
+            \begin{tikzpicture}
+                % Move the entire image and circle down
+                \node[anchor=center, yshift=-5cm] {
+                    \begin{tikzpicture}
+                        % Draw the circular white background
+                        \fill[white] (0,0) circle (2.5cm);
+                        % Clip the image within the circle
+                        \clip (0,0) circle (2.5cm);
+                        % Insert the image
+                        \node[anchor=center] at (0,0) {\includegraphics[width=5cm, height=5cm, keepaspectratio]{./kanish.png}};
+                    \end{tikzpicture}
+                };
+            \end{tikzpicture}
+        \end{center}
+         &
+        % Right Column: Centered Text
+        \begin{center}
+            {\fontsize{60pt}{72pt}\selectfont \textbf{KANISH GOSAIN}} \\[0.5em]
+            {\large \textbf{AI Strategist $|$ Research Engineer $|$ Team-Driven Innovator}}
+        \end{center}
+    \end{tabular}
+\end{tcolorbox}
+
+\vspace{3em}
+
+% Two-Column Layout
+\begin{tcolorbox}[colback=white, colframe=white, boxrule=0pt, arc=0mm, boxsep=0mm, width=\textwidth]
+    \begin{minipage}[t]{0.3\textwidth} % Left Column (30%)
+        \section*{KEY SKILLS}
+        \begin{itemize}[leftmargin=1em, labelsep=0.5em]
+            \item Deep Reinforcement Learning
+            \item Model Training
+            \item Deep Learning
+            \item Generative AI
+            \item Amazon Web Services
+            \item Full-Stack Development
+            \item Torch
+            \item LangChain
+            \item GANs
+            \item Terraform
+            \item Python
+            \item Typescript
+            \item Kubernetes
+            \item \href{https://www.linkedin.com/in/regokan/details/skills/}{View all...}
+        \end{itemize}
+
+        \vspace{1em}
+
+        \section*{
+          \begin{tikzpicture}[baseline=(current bounding box.south)]
+              \node[anchor=south west, inner sep=5] (heading) {\textbf{\Large Contact}};
+              \draw[line width=1.5mm, black] (heading.south west) -- (heading.south east);
+          \end{tikzpicture}
+         }
+        \begin{itemize}[leftmargin=1em, labelsep=0.5em]
+            \item \href{mailto:xxxxx@gmail.com}{xxxxx@gmail.com}
+            \item +xx xxxx xxxxx
+            \item \href{https://www.linkedin.com/in/regokan}{www.linkedin.com/in/regokan}
+        \end{itemize}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.7\textwidth} % Right Column (70%)
+
+        \textbf{I am an AI Strategist, Research Engineer, and Team Leader with a proven track record of delivering impactful, end-to-end solutions in AI development, engineering leadership, and product innovation.}
+        \vspace{2em}
+
+        At my core, I am a researcher and problem solver, enabling me to lead with
+        empathy and precision. I thrive on managing diverse teams by understanding
+        their challenges and fostering a culture of innovation, collaboration, and
+        shared goals. My leadership style is rooted in empowerment and adaptability,
+        inspired by Scrum principles, and a hands-on approach that ensures focus and
+        effectiveness in any project.
+
+        \vspace{1em}
+
+        Passionate about ethical AI development and open-source innovation, I aim to
+        bridge gaps in research and create transformative solutions. I believe in the
+        power of collaboration and transparency to unlock AI's potential for good,
+        driving continuous learning and fostering an environment of growth and
+        excellence. When I’m not coding or researching, I enjoy exploring emerging
+        technologies, solving complex problems, and building tools that make a
+        difference.
+    \end{minipage}
+\end{tcolorbox}
+
+\end{document}
