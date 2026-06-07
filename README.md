@@ -1,56 +1,48 @@
 ## Hi, I'm Kanish 👋
 
-[![Twitter Badge](https://img.shields.io/badge/-@regokan-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/jonathangin52)](https://twitter.com/regokan)
-[![Linkedin Badge](https://img.shields.io/badge/-regokan-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jonathangin/)](https://www.linkedin.com/in/regokan/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-regokan-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/regokan/)
+[![Twitter](https://img.shields.io/badge/Twitter-@regokan-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/regokan)
 
-# AI Strategist | Research Engineer | Team Leader
+# I optimize the system around the model
 
-I am an AI Strategist, Research Engineer, and Team Leader with a proven track record of delivering impactful, end-to-end solutions in AI development, engineering leadership, and product innovation. With over a decade of experience across AI research, cloud technologies, data engineering, DevOps, and full-stack engineering, I seamlessly bridge technical expertise with strategic leadership to drive organizational success.
+**AI Engineer · black-box optimization of frontier-model systems, at inference**
 
----
+Frontier models ship as closed boxes: no weights, no gradients, just an API you query. So the leverage has moved off training and onto inference. You optimize everything you can actually touch around the model, the context, the harness, the evals, the loop, to make a black box behave reliably. It is black-box optimization, at inference time. **The model is rarely the bottleneck. The system around it is.**
 
-## ➤ My Approach to Leadership
+I've worked the other end of this too, post-training models that reached 100M+ users. Now I work in between, where a real organisation turns those models into something reliable.
 
-At my core, I am a researcher and problem solver. This mindset enables me to lead with empathy and precision, managing diverse teams by deeply understanding their challenges and contributions. I don’t hesitate to step into their shoes, whether as a researcher, full-stack developer, or data scientist, to ensure we meet our shared goals. I believe in leading by example, empowering teams while fostering a culture of innovation and collaboration.
+```mermaid
+flowchart TB
+    M["Frontier models<br/>pre-training, post-training<br/>a closed box: API only, no weights, no gradients"]
+    A["The system around the model, at inference<br/>context · harness · evals · the loop<br/>this is where I work"]
+    P["Products<br/>experiences, workflows, decisions"]
+    M --> A --> P
+    classDef focus fill:#5b4bf5,stroke:#3f2fd0,color:#ffffff,stroke-width:2px;
+    classDef plain fill:#f4f3ef,stroke:#d9d6cf,color:#1a1a1a;
+    class A focus;
+    class M,P plain;
+```
 
----
+## What I work on
 
-## ➤ Highlights
+The through-line is the tradeoffs that force the next decision, not the tools.
 
-- **Strategic Visionary**:  
-  As the Founder of Insightial, I have steered the company toward ethical AI innovation, combining open-source contributions with cutting-edge generative AI applications that align with transparency and impact-driven goals.
+**Making a legacy enterprise agent-native**
+- **The platform problem:** many teams contributing to and running on one agent platform without rewriting what they have. Versioning and feature flags, federating their own multi-agent / A2A systems, defence in depth at the API.
+- **Packaging and progressive disclosure:** capabilities (tools, UI, prompts, guardrails) bundled, then loaded and unloaded on demand.
+- **Evaluation and composition:** testing and owning behaviour no single team authored. Conflicting instructions, layered guardrails, the combinatorial cost.
+- **Developer leverage, used securely:** engineers running many coding agents at once, with blast radius and reversibility as the frame.
 
-- **Proven Leadership**:  
-  I’ve led cross-functional teams at organizations like OpenAI, Insightial, and MadMen AI, where I managed AI product lifecycles, accelerated timelines, and aligned technical implementations with business objectives.
+**Building and running the agents**
+- **The harness, and agent factories:** the scaffolding that sets the reliability ceiling, plus fleets on worktrees and supervision trees.
+- **Generative UI:** interfaces the model composes at runtime, and the streaming, loop, and human-gate problems underneath.
+- **An LLM-native knowledge base:** an agent-readable wiki that compounds instead of re-deriving on every query.
+- **Memory:** what an agent should remember, where curation matters more than storage.
 
-- **Hands-On Mentor**:  
-  My willingness to “get my hands dirty” allows me to stay connected to the technical aspects of projects. Whether designing scalable architectures or troubleshooting at the code level, I ensure my teams stay focused and effective.
+**Cutting across everything**
+- **Context management:** the window is finite and degrades before it overflows. Compaction, prompt caching, sub-agent isolation.
+- **Observability:** tracing and evaluating a system whose shape changes every run, and the failures only production reveals.
 
-- **Scrum Advocate**:  
-  Inspired by Scrum, I not only manage teams with its principles but also structure my personal life around its values of adaptability, focus, and iterative improvement.
+## Off the keyboard
 
----
-
-## ➤ Key Achievements
-
-- At **OpenAI**, significantly advanced Reinforcement Learning from Human Feedback (RLHF) processes and improved data collection for fine-tuning LLMs.
-- Developed **AdIntel** and **CCO** at **MadMen AI**, achieving rapid deployment of two generative AI products that transformed client engagement.
-- Pioneered **Deep Vision Lab** and **Deep Mind Lab**, open-source frameworks that empower global researchers in AI, computer vision, and deep reinforcement learning.
-- Launched three groundbreaking **GenAI applications** at **Insightial**, including tools for automated research, job matching, and AI-driven property insights.
-- Streamlined **Thrasio’s ETL pipelines**, deployed DBT models in Snowflake, and improved decision-making with GraphQL APIs and Power BI dashboards.
-- Modernized **Village Medical’s backend** with FastAPI, integrated AthenaHealth APIs, and enhanced healthcare appointment systems.
-- Automated event ticketing at **OnTheStage** using Terraform and AWS, improving efficiency.
-- Launched **Kitelane marketplace** and **Amazon Ads Manager** at **Storepath AI**, enhancing user experience and analytics.
-- Co-founded **Sniff**, a pet care app with features like Vet Scheduler and Razorpay UPI integration, fostering a community ecosystem.
-
----
-
-## ➤ What Drives Me
-
-I founded **Insightial** to bridge gaps in ethical AI development, open-source innovation, and community-driven research. I believe in the power of collaboration and transparency to unlock AI's potential for good. As a certified Scrum Master, I enjoy leading agile teams, mentoring engineers, and fostering a culture of continuous learning and innovation.
-
-When I’m not coding or researching, you’ll find me exploring emerging technologies, solving complex problems, and building tools that make a difference.
-
----
-
-**Let’s connect to explore how we can drive transformation, inspire teams, and create solutions that make a lasting impact.**
+Reading and running, mostly.
