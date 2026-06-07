@@ -7,13 +7,13 @@
 
 **AI Engineer · black-box optimization of frontier-model systems, at inference**
 
-Frontier models ship as closed boxes: no weights, no gradients, just an API you query. So the leverage has moved off training and onto inference. You optimize everything you can actually touch around the model, the context, the harness, the evals, the loop, to make a black box behave reliably. It is black-box optimization, at inference time. **The model is rarely the bottleneck. The system around it is.**
+The leverage has moved off training and onto inference: you optimize the system around the model, the context, the harness, the evals, the loop, by running it and measuring what comes back. Black-box optimization, at inference. **The model is rarely the bottleneck. The system around it is.**
 
 I've worked the other end of this too, post-training models that reached 100M+ users. Now I work in between, where a real organisation turns those models into something reliable.
 
 ```mermaid
 flowchart TB
-    M["Frontier models<br/>pre-training, post-training<br/>a closed box: API only, no weights, no gradients"]
+    M["Frontier models<br/>pre-training, post-training"]
     A["The system around the model, at inference<br/>context · harness · evals · the loop<br/>this is where I work"]
     P["Products<br/>experiences, workflows, decisions"]
     M --> A --> P
